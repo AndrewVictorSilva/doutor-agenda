@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 export default function Home() {
   return (
     <div className="">
-      <Link href={"/login"}>
+      <Link href={"/authentication"}>
         <Button>Login</Button>
       </Link>
     </div>
