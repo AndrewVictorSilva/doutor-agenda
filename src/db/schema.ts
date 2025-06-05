@@ -125,10 +125,10 @@ export const doctorsTable = pgTable("doctors", {
     .references(() => clinicsTable.id, { onDelete: "cascade" }),
 
   avatarImageUrl: text("avatar_image_url"),
-  avaiableFromWeekDay: integer("avaiable_from_week_day").notNull(), // 1 Segunda
-  avaiableToWeekDay: integer("avaiable_to_week_day").notNull(), // 5 Sexta
-  avaiableFromTime: time("avaiable_from_time").notNull(), // 1 Segunda
-  avaiableToTime: time("avaiable_to_time").notNull(), // 5 Sexta
+  availableFromWeekDay: integer("available_from_week_day").notNull(), // 1 Segunda
+  availableToWeekDay: integer("available_to_week_day").notNull(), // 5 Sexta
+  availableFromTime: time("available_from_time").notNull(), // 1 Segunda
+  availableToTime: time("available_to_time").notNull(), // 5 Sexta
   specialty: text("specialty"),
   appointmentPriceInCents: integer("appointment_price_in_cents").notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
