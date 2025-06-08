@@ -81,7 +81,7 @@ const formSchema = z
   );
 
 interface UpsertDoctorFormProps {
-  doctor: typeof doctorsTable.$inferSelect;
+  doctor?: typeof doctorsTable.$inferSelect;
   onSuccess?: () => void;
 }
 
