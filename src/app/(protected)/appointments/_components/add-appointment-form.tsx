@@ -286,9 +286,11 @@ const AddAppointmentForm = ({
                       mode="single"
                       selected={field.value}
                       onSelect={field.onChange}
-                      disabled={(date) =>
-                        date < new Date() || !isDateAvailable(date)
-                      }
+                      disabled={(date) => {
+                        const today = new Date();
+                        today.setHours(0, 0, 0, 0); // Set to midnight
+                        return date < today || !isDateAvailable(date);
+                      }}
                       initialFocus
                     />
                   </PopoverContent>
