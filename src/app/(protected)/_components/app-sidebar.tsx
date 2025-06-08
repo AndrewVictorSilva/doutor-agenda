@@ -36,7 +36,7 @@ import { authClient } from "@/lib/auth-client";
 const items = [
   {
     title: "Dashboard",
-    url: "Dashboard",
+    url: "dashboard",
     icon: LayoutDashboard,
   },
   {
